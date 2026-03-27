@@ -1,0 +1,12 @@
+body { margin:0; font-family:Arial; background:#0f0f0f; color:white; }
+nav { display:flex; justify-content:space-between; padding:15px 30px; background:#1a1a1a; border-bottom:2px solid #ff3c5f; }
+nav h1 { color:#ff3c5f; }
+.nav-links span { margin-left:20px; cursor:pointer; }
+.hidden { display:none; }
+
+.game-card { background:#1f1f1f; padding:30px; margin:20px auto; width:200px; border:2px solid #ff3c5f; cursor:pointer; text-align:center; }
+.game-card:hover { transform:scale(1.05); }
+
+#gameWindow { display:flex; position:fixed; top:0; left:0; width:100%; height:100%; background:black; justify-content:center; align-items:center; flex-direction:column; }
+#gameCanvas { background:#222; }
+#gameWindow span { position:absolute; top:20px; right:30px; font-size:30px; cursor:pointer; }
