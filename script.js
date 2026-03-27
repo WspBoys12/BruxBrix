@@ -6,7 +6,7 @@ function showSection(name){
   document.getElementById(name).classList.remove('hidden');
 }
 
-// AUTH FUNCTIONS
+// AUTH
 function signup() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
@@ -55,5 +55,12 @@ function showProfile() {
 
 // GAME WINDOW
 const gameWindow = document.getElementById("gameWindow");
-function openGame(game){ gameWindow.classList.remove('hidden'); startDodgeGame(); }
-function closeGame(){ gameWindow.classList.add('hidden'); cancelAnimationFrame(gameLoopId); }
+let gameLoopId;
+function openGame(game){ 
+  gameWindow.classList.remove('hidden'); 
+  startDodgeGame(); 
+}
+function closeGame(){ 
+  gameWindow.classList.add('hidden'); 
+  cancelAnimationFrame(gameLoopId); 
+}
